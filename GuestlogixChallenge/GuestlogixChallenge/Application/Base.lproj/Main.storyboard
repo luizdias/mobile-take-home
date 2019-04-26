@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="GuestlogixChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0ez-RB-rDU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2xk-hj-gvG">
+                                <rect key="frame" x="15.5" y="28" width="344" height="113"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kpk-nL-quE">
+                                        <rect key="frame" x="8" y="60" width="328" height="44"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="9dB-es-fZe"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="327" id="enO-na-3fF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Search Routes">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zKJ-UW-eH2"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="FROM" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FXz-Mo-nCO" customClass="AutocompleteTextField" customModule="GuestlogixChallenge" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="8" width="136" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="136" id="GiW-Ww-BvN"/>
+                                            <constraint firstAttribute="height" constant="44" id="kWV-ya-uNm"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✈︎" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLj-W5-AwK">
+                                        <rect key="frame" x="152" y="8" width="40" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="20v-lE-JGU"/>
+                                            <constraint firstAttribute="height" constant="44" id="tpe-hh-DmY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="TO" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V1h-Sg-hYK" customClass="AutocompleteTextField" customModule="GuestlogixChallenge" customModuleProvider="target">
+                                        <rect key="frame" x="200" y="8" width="136" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="rH0-bj-XAH"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="136" id="t6u-ie-4B5"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Kpk-nL-quE" firstAttribute="leading" secondItem="2xk-hj-gvG" secondAttribute="leading" constant="8" id="5Oq-3P-ym0"/>
+                                    <constraint firstItem="dLj-W5-AwK" firstAttribute="leading" secondItem="FXz-Mo-nCO" secondAttribute="trailing" constant="8" id="NpN-bC-5t1"/>
+                                    <constraint firstItem="dLj-W5-AwK" firstAttribute="top" secondItem="NGM-Ds-Vxh" secondAttribute="top" constant="8" id="OfF-32-JIc"/>
+                                    <constraint firstItem="dLj-W5-AwK" firstAttribute="centerX" secondItem="2xk-hj-gvG" secondAttribute="centerX" id="b8Y-rx-oSP"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kpk-nL-quE" secondAttribute="trailing" constant="8" id="bWE-af-NzP"/>
+                                    <constraint firstItem="FXz-Mo-nCO" firstAttribute="top" secondItem="NGM-Ds-Vxh" secondAttribute="top" constant="8" id="g2o-Iv-qLh"/>
+                                    <constraint firstItem="Kpk-nL-quE" firstAttribute="top" secondItem="FXz-Mo-nCO" secondAttribute="bottom" constant="8" symbolic="YES" id="hAW-9h-D9n"/>
+                                    <constraint firstItem="NGM-Ds-Vxh" firstAttribute="trailing" secondItem="V1h-Sg-hYK" secondAttribute="trailing" constant="8" id="kTo-DC-D60"/>
+                                    <constraint firstAttribute="height" constant="113" id="nD6-qw-xKl"/>
+                                    <constraint firstItem="FXz-Mo-nCO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NGM-Ds-Vxh" secondAttribute="leading" id="ofR-f7-EPp"/>
+                                    <constraint firstItem="V1h-Sg-hYK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dLj-W5-AwK" secondAttribute="trailing" constant="8" symbolic="YES" id="uJn-Yl-owz"/>
+                                    <constraint firstItem="V1h-Sg-hYK" firstAttribute="top" secondItem="NGM-Ds-Vxh" secondAttribute="top" constant="8" id="zGn-JX-JcA"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="NGM-Ds-Vxh"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0ez-RB-rDU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Una-qn-KfD"/>
+                            <constraint firstItem="2xk-hj-gvG" firstAttribute="centerX" secondItem="0ez-RB-rDU" secondAttribute="centerX" id="WXg-Lm-7Mi"/>
+                            <constraint firstItem="2xk-hj-gvG" firstAttribute="top" secondItem="Yqa-XE-VRR" secondAttribute="top" constant="8" id="YWP-3v-1H4"/>
+                            <constraint firstItem="0ez-RB-rDU" firstAttribute="leading" secondItem="Yqa-XE-VRR" secondAttribute="leading" id="jDT-YA-lJq"/>
+                            <constraint firstItem="0ez-RB-rDU" firstAttribute="trailing" secondItem="Yqa-XE-VRR" secondAttribute="trailing" id="jRi-JN-FMg"/>
+                            <constraint firstItem="0ez-RB-rDU" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="scA-AT-4HD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yqa-XE-VRR"/>
+                    </view>
+                    <connections>
+                        <outlet property="from" destination="FXz-Mo-nCO" id="kbU-Uy-zEJ"/>
+                        <outlet property="mapView" destination="0ez-RB-rDU" id="jzi-T6-J1K"/>
+                        <outlet property="searchButton" destination="Kpk-nL-quE" id="RD1-JM-Qxc"/>
+                        <outlet property="to" destination="V1h-Sg-hYK" id="oxS-jB-8Va"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B33ED22226E9C33002AC28D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33ED21226E9C33002AC28D /* AppDelegate.swift */; };
+		4B33ED24226E9C33002AC28D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33ED23226E9C33002AC28D /* MapViewController.swift */; };
+		4B33ED27226E9C33002AC28D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B33ED25226E9C33002AC28D /* Main.storyboard */; };
+		4B33ED29226E9C35002AC28D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B33ED28226E9C35002AC28D /* Assets.xcassets */; };
+		4B33ED2C226E9C35002AC28D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B33ED2A226E9C35002AC28D /* LaunchScreen.storyboard */; };
+		4B33ED37226E9C35002AC28D /* GuestlogixChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33ED36226E9C35002AC28D /* GuestlogixChallengeTests.swift */; };
+		4B33ED44226EA354002AC28D /* BaseAirport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33ED43226EA354002AC28D /* BaseAirport.swift */; };
+		4B33ED4F226EB853002AC28D /* DataUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33ED4E226EB853002AC28D /* DataUtils.swift */; };
+		4B33ED51226ECDED002AC28D /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33ED50226ECDED002AC28D /* Route.swift */; };
+		4B33ED53226ECE3D002AC28D /* Airline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33ED52226ECE3D002AC28D /* Airline.swift */; };
+		4B7B419E226FE2D1002D1ACA /* GuestlogixModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B7B419C226FE2D1002D1ACA /* GuestlogixModel.xcdatamodeld */; };
+		4B7E9ADF22700B270004916E /* CustomPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7E9ADE22700B270004916E /* CustomPin.swift */; };
+		4B84433022728DC300A08ABA /* Graphable+Searchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B84432F22728DC300A08ABA /* Graphable+Searchable.swift */; };
+		4B84433422728E4400A08ABA /* airlines.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B84433122728E4400A08ABA /* airlines.csv */; };
+		4B84433522728E4400A08ABA /* airports.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B84433222728E4400A08ABA /* airports.csv */; };
+		4B84433622728E4400A08ABA /* routes.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4B84433322728E4400A08ABA /* routes.csv */; };
+		4B8443382272B00300A08ABA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8443372272B00300A08ABA /* Constants.swift */; };
+		4B84433A2272B8DA00A08ABA /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8443392272B8DA00A08ABA /* UIViewController+Extensions.swift */; };
+		4BA31C7C22715E01000583C4 /* Graphable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA31C7822715E01000583C4 /* Graphable.swift */; };
+		4BA31C7D22715E01000583C4 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA31C7922715E01000583C4 /* Edge.swift */; };
+		4BA31C7E22715E01000583C4 /* AdjacencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA31C7A22715E01000583C4 /* AdjacencyList.swift */; };
+		4BA31C7F22715E01000583C4 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA31C7B22715E01000583C4 /* Vertex.swift */; };
+		4BA31C9C22716836000583C4 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA31C9522716836000583C4 /* Queue.swift */; };
+		4BA31C9D22716836000583C4 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA31C9622716836000583C4 /* LinkedList.swift */; };
+		4BDCB8FC226FEC2400A6604C /* AutocompleteTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDCB8FB226FEC2400A6604C /* AutocompleteTextField.swift */; };
+		4BDCB8FE226FED5A00A6604C /* SearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDCB8FD226FED5A00A6604C /* SearchItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B33ED33226E9C35002AC28D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B33ED16226E9C33002AC28D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B33ED1D226E9C33002AC28D;
+			remoteInfo = GuestlogixChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B33ED1E226E9C33002AC28D /* GuestlogixChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuestlogixChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B33ED21226E9C33002AC28D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B33ED23226E9C33002AC28D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4B33ED26226E9C33002AC28D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B33ED28226E9C35002AC28D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B33ED2B226E9C35002AC28D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B33ED2D226E9C35002AC28D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B33ED32226E9C35002AC28D /* GuestlogixChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuestlogixChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B33ED36226E9C35002AC28D /* GuestlogixChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestlogixChallengeTests.swift; sourceTree = "<group>"; };
+		4B33ED38226E9C35002AC28D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B33ED43226EA354002AC28D /* BaseAirport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAirport.swift; sourceTree = "<group>"; };
+		4B33ED4E226EB853002AC28D /* DataUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUtils.swift; sourceTree = "<group>"; };
+		4B33ED50226ECDED002AC28D /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		4B33ED52226ECE3D002AC28D /* Airline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airline.swift; sourceTree = "<group>"; };
+		4B7B419D226FE2D1002D1ACA /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		4B7E9ADE22700B270004916E /* CustomPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPin.swift; sourceTree = "<group>"; };
+		4B84432F22728DC300A08ABA /* Graphable+Searchable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Graphable+Searchable.swift"; sourceTree = "<group>"; };
+		4B84433122728E4400A08ABA /* airlines.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = airlines.csv; sourceTree = "<group>"; };
+		4B84433222728E4400A08ABA /* airports.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = airports.csv; sourceTree = "<group>"; };
+		4B84433322728E4400A08ABA /* routes.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = routes.csv; sourceTree = "<group>"; };
+		4B8443372272B00300A08ABA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4B8443392272B8DA00A08ABA /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		4BA31C7822715E01000583C4 /* Graphable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graphable.swift; sourceTree = "<group>"; };
+		4BA31C7922715E01000583C4 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		4BA31C7A22715E01000583C4 /* AdjacencyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdjacencyList.swift; sourceTree = "<group>"; };
+		4BA31C7B22715E01000583C4 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		4BA31C9522716836000583C4 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		4BA31C9622716836000583C4 /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		4BDCB8FB226FEC2400A6604C /* AutocompleteTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutocompleteTextField.swift; sourceTree = "<group>"; };
+		4BDCB8FD226FED5A00A6604C /* SearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B33ED1B226E9C33002AC28D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B33ED2F226E9C35002AC28D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B33ED15226E9C33002AC28D = {
+			isa = PBXGroup;
+			children = (
+				4B33ED20226E9C33002AC28D /* GuestlogixChallenge */,
+				4B33ED35226E9C35002AC28D /* GuestlogixChallengeTests */,
+				4B33ED1F226E9C33002AC28D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B33ED1F226E9C33002AC28D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B33ED1E226E9C33002AC28D /* GuestlogixChallenge.app */,
+				4B33ED32226E9C35002AC28D /* GuestlogixChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B33ED20226E9C33002AC28D /* GuestlogixChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				4B84432D22728C9300A08ABA /* Application */,
+				4B84432C22728C3600A08ABA /* ViewController */,
+				4B84432A22728BEF00A08ABA /* Models */,
+				4B33ED28226E9C35002AC28D /* Assets.xcassets */,
+				4B33ED2D226E9C35002AC28D /* Info.plist */,
+				4B33ED45226EA3C1002AC28D /* Resources */,
+			);
+			path = GuestlogixChallenge;
+			sourceTree = "<group>";
+		};
+		4B33ED35226E9C35002AC28D /* GuestlogixChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B33ED36226E9C35002AC28D /* GuestlogixChallengeTests.swift */,
+				4B33ED38226E9C35002AC28D /* Info.plist */,
+			);
+			path = GuestlogixChallengeTests;
+			sourceTree = "<group>";
+		};
+		4B33ED45226EA3C1002AC28D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B84433122728E4400A08ABA /* airlines.csv */,
+				4B84433222728E4400A08ABA /* airports.csv */,
+				4B84433322728E4400A08ABA /* routes.csv */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4B84432A22728BEF00A08ABA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4B7E9ADE22700B270004916E /* CustomPin.swift */,
+				4B33ED50226ECDED002AC28D /* Route.swift */,
+				4B33ED43226EA354002AC28D /* BaseAirport.swift */,
+				4B33ED52226ECE3D002AC28D /* Airline.swift */,
+				4B7B419C226FE2D1002D1ACA /* GuestlogixModel.xcdatamodeld */,
+				4BDCB8FD226FED5A00A6604C /* SearchItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4B84432C22728C3600A08ABA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4B33ED23226E9C33002AC28D /* MapViewController.swift */,
+				4BDCB8FB226FEC2400A6604C /* AutocompleteTextField.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4B84432D22728C9300A08ABA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4B84432E22728CD400A08ABA /* Utils+Helpers */,
+				4B33ED21226E9C33002AC28D /* AppDelegate.swift */,
+				4B33ED25226E9C33002AC28D /* Main.storyboard */,
+				4B33ED2A226E9C35002AC28D /* LaunchScreen.storyboard */,
+				4B8443372272B00300A08ABA /* Constants.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4B84432E22728CD400A08ABA /* Utils+Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4BA31C7722715DD3000583C4 /* Graph */,
+				4B33ED4E226EB853002AC28D /* DataUtils.swift */,
+				4B8443392272B8DA00A08ABA /* UIViewController+Extensions.swift */,
+			);
+			path = "Utils+Helpers";
+			sourceTree = "<group>";
+		};
+		4BA31C7722715DD3000583C4 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				4BA31C9422716836000583C4 /* Queue */,
+				4BA31C7A22715E01000583C4 /* AdjacencyList.swift */,
+				4B84432F22728DC300A08ABA /* Graphable+Searchable.swift */,
+				4BA31C7922715E01000583C4 /* Edge.swift */,
+				4BA31C7822715E01000583C4 /* Graphable.swift */,
+				4BA31C7B22715E01000583C4 /* Vertex.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		4BA31C9422716836000583C4 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				4BA31C9522716836000583C4 /* Queue.swift */,
+				4BA31C9622716836000583C4 /* LinkedList.swift */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B33ED1D226E9C33002AC28D /* GuestlogixChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B33ED3B226E9C35002AC28D /* Build configuration list for PBXNativeTarget "GuestlogixChallenge" */;
+			buildPhases = (
+				4B33ED1A226E9C33002AC28D /* Sources */,
+				4B33ED1B226E9C33002AC28D /* Frameworks */,
+				4B33ED1C226E9C33002AC28D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GuestlogixChallenge;
+			productName = GuestlogixChallenge;
+			productReference = 4B33ED1E226E9C33002AC28D /* GuestlogixChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B33ED31226E9C35002AC28D /* GuestlogixChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B33ED3E226E9C35002AC28D /* Build configuration list for PBXNativeTarget "GuestlogixChallengeTests" */;
+			buildPhases = (
+				4B33ED2E226E9C35002AC28D /* Sources */,
+				4B33ED2F226E9C35002AC28D /* Frameworks */,
+				4B33ED30226E9C35002AC28D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B33ED34226E9C35002AC28D /* PBXTargetDependency */,
+			);
+			name = GuestlogixChallengeTests;
+			productName = GuestlogixChallengeTests;
+			productReference = 4B33ED32226E9C35002AC28D /* GuestlogixChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B33ED16226E9C33002AC28D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Luiz Fernando Aquino Dias";
+				TargetAttributes = {
+					4B33ED1D226E9C33002AC28D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					4B33ED31226E9C35002AC28D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 4B33ED1D226E9C33002AC28D;
+					};
+				};
+			};
+			buildConfigurationList = 4B33ED19226E9C33002AC28D /* Build configuration list for PBXProject "GuestlogixChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B33ED15226E9C33002AC28D;
+			productRefGroup = 4B33ED1F226E9C33002AC28D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B33ED1D226E9C33002AC28D /* GuestlogixChallenge */,
+				4B33ED31226E9C35002AC28D /* GuestlogixChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B33ED1C226E9C33002AC28D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B84433622728E4400A08ABA /* routes.csv in Resources */,
+				4B84433522728E4400A08ABA /* airports.csv in Resources */,
+				4B33ED2C226E9C35002AC28D /* LaunchScreen.storyboard in Resources */,
+				4B84433422728E4400A08ABA /* airlines.csv in Resources */,
+				4B33ED29226E9C35002AC28D /* Assets.xcassets in Resources */,
+				4B33ED27226E9C33002AC28D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B33ED30226E9C35002AC28D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B33ED1A226E9C33002AC28D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B7E9ADF22700B270004916E /* CustomPin.swift in Sources */,
+				4B33ED24226E9C33002AC28D /* MapViewController.swift in Sources */,
+				4BA31C7D22715E01000583C4 /* Edge.swift in Sources */,
+				4BA31C9C22716836000583C4 /* Queue.swift in Sources */,
+				4BA31C7E22715E01000583C4 /* AdjacencyList.swift in Sources */,
+				4BA31C9D22716836000583C4 /* LinkedList.swift in Sources */,
+				4B84433A2272B8DA00A08ABA /* UIViewController+Extensions.swift in Sources */,
+				4B33ED4F226EB853002AC28D /* DataUtils.swift in Sources */,
+				4BA31C7F22715E01000583C4 /* Vertex.swift in Sources */,
+				4BA31C7C22715E01000583C4 /* Graphable.swift in Sources */,
+				4BDCB8FE226FED5A00A6604C /* SearchItem.swift in Sources */,
+				4B33ED44226EA354002AC28D /* BaseAirport.swift in Sources */,
+				4B33ED22226E9C33002AC28D /* AppDelegate.swift in Sources */,
+				4B84433022728DC300A08ABA /* Graphable+Searchable.swift in Sources */,
+				4B33ED53226ECE3D002AC28D /* Airline.swift in Sources */,
+				4B7B419E226FE2D1002D1ACA /* GuestlogixModel.xcdatamodeld in Sources */,
+				4B33ED51226ECDED002AC28D /* Route.swift in Sources */,
+				4BDCB8FC226FEC2400A6604C /* AutocompleteTextField.swift in Sources */,
+				4B8443382272B00300A08ABA /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B33ED2E226E9C35002AC28D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B33ED37226E9C35002AC28D /* GuestlogixChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B33ED34226E9C35002AC28D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B33ED1D226E9C33002AC28D /* GuestlogixChallenge */;
+			targetProxy = 4B33ED33226E9C35002AC28D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B33ED25226E9C33002AC28D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B33ED26226E9C33002AC28D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4B33ED2A226E9C35002AC28D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B33ED2B226E9C35002AC28D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B33ED39226E9C35002AC28D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B33ED3A226E9C35002AC28D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B33ED3C226E9C35002AC28D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GuestlogixChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.guestlogixtests.GuestlogixChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B33ED3D226E9C35002AC28D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GuestlogixChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.guestlogixtests.GuestlogixChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4B33ED3F226E9C35002AC28D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GuestlogixChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.guestlogixtests.GuestlogixChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuestlogixChallenge.app/GuestlogixChallenge";
+			};
+			name = Debug;
+		};
+		4B33ED40226E9C35002AC28D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GuestlogixChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.guestlogixtests.GuestlogixChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuestlogixChallenge.app/GuestlogixChallenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B33ED19226E9C33002AC28D /* Build configuration list for PBXProject "GuestlogixChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B33ED39226E9C35002AC28D /* Debug */,
+				4B33ED3A226E9C35002AC28D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B33ED3B226E9C35002AC28D /* Build configuration list for PBXNativeTarget "GuestlogixChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B33ED3C226E9C35002AC28D /* Debug */,
+				4B33ED3D226E9C35002AC28D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B33ED3E226E9C35002AC28D /* Build configuration list for PBXNativeTarget "GuestlogixChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B33ED3F226E9C35002AC28D /* Debug */,
+				4B33ED40226E9C35002AC28D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4B7B419C226FE2D1002D1ACA /* GuestlogixModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4B7B419D226FE2D1002D1ACA /* Model.xcdatamodel */,
+			);
+			currentVersion = 4B7B419D226FE2D1002D1ACA /* Model.xcdatamodel */;
+			path = GuestlogixModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4B33ED16226E9C33002AC28D /* Project object */;
+}
